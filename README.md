@@ -109,9 +109,6 @@ http://localhost:8000
 - 📝 Preference Quiz
 - 📚 Recommended Books
 - ❤️ Wishlist
-
-*(Add screenshots here if available.)*
-
 ---
 
 ## ⚠️ Known Issues
