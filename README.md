@@ -111,14 +111,6 @@ http://localhost:8000
 - ❤️ Wishlist
 ---
 
-## ⚠️ Known Issues
-
-- The cover image for **The Silent Patient** uses a local Windows file path and should be replaced with a valid online image URL.
-- Quiz preference keys are generated from question headings, so changing the question text may affect recommendation logic.
-- Wishlist and quiz progress are stored only in memory and are reset when the page is refreshed.
-
----
-
 ## 🚀 Future Enhancements
 
 - Store wishlist using Local Storage
