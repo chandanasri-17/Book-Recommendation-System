@@ -1,0 +1,111 @@
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMatch - Find Your Next Read</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BookMatch</h1>
+            <p>Discover your next favorite book based on your preferences</p>
+        </header>
+        
+        <div class="quiz-container">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            
+            <div class="question" id="question-1">
+                <h3>What genre do you prefer?</h3>
+                <div class="options">
+                    <div class="option" data-value="fiction">Fiction</div>
+                    <div class="option" data-value="non-fiction">Non-Fiction</div>
+                    <div class="option" data-value="fantasy">Fantasy</div>
+                    <div class="option" data-value="mystery">Mystery</div>
+                    <div class="option" data-value="sci-fi">Science Fiction</div>
+                </div>
+            </div>
+            
+            <div class="question" id="question-2" style="display: none;">
+                <h3>How much time do you have for reading?</h3>
+                <div class="options">
+                    <div class="option" data-value="short">Short Reads (under 300 pages)</div>
+                    <div class="option" data-value="medium">Medium Reads (300-500 pages)</div>
+                    <div class="option" data-value="long">Long Reads (over 500 pages)</div>
+                </div>
+            </div>
+            
+            <div class="question" id="question-3" style="display: none;">
+                <h3>Do you prefer classic literature or contemporary works?</h3>
+                <div class="options">
+                    <div class="option" data-value="classic">Classics</div>
+                    <div class="option" data-value="contemporary">Contemporary</div>
+                    <div class="option" data-value="both">Both</div>
+                </div>
+            </div>
+            
+            <div class="question" id="question-4" style="display: none;">
+                <h3>What mood are you looking for?</h3>
+                <div class="options">
+                    <div class="option" data-value="uplifting">Uplifting</div>
+                    <div class="option" data-value="thoughtful">Thought-provoking</div>
+                    <div class="option" data-value="dark">Dark or Intense</div>
+                    <div class="option" data-value="educational">Educational</div>
+                    <div class="option" data-value="adventurous">Adventurous</div>
+                </div>
+            </div>
+            
+            <div class="question" id="question-5" style="display: none;">
+                <h3>Rate your reading experience level:</h3>
+                <div class="options">
+                    <div class="option" data-value="casual">Casual Reader</div>
+                    <div class="option" data-value="regular">Regular Reader</div>
+                    <div class="option" data-value="avid">Avid Bookworm</div>
+                </div>
+            </div>
+            
+            <button id="next-btn">Next Question</button>
+        </div>
+        
+        <div class="results-container">
+            <h2>Recommended Books for You</h2>
+            <p>Based on your preferences, we think you'll enjoy these books:</p>
+            
+            <div class="books-grid" id="recommendations">
+                <!-- Book recommendations will be inserted here -->
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="back-button" id="back-to-quiz">Retake Quiz</button>
+                <button id="view-wishlist">View Wishlist</button>
+            </div>
+        </div>
+        
+        <div class="wishlist-container">
+            <h2>Your Reading Wishlist</h2>
+            
+            <div class="books-grid" id="wishlist">
+                <!-- Wishlist items will be inserted here -->
+            </div>
+            
+            <div class="empty-wishlist" id="empty-wishlist">
+                <h3>Your wishlist is empty</h3>
+                <p>Add books from your recommendations to see them here</p>
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="back-button" id="back-to-results">Back to Recommendations</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">Book added to wishlist!</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
